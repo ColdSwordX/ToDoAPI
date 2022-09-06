@@ -89,7 +89,7 @@ PUT "todoitems/{id}
 		});
 
 DELETE "/todoitems/{id}"
-s
+
 	Test
 		pm.test("Status code is 200", () => {
 			pm.expect(pm.response.code).to.eql(200);
