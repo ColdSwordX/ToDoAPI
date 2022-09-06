@@ -21,9 +21,9 @@ https://docs.microsoft.com/en-us/aspnet/core/tutorials/min-web-api?view=aspnetco
 
 
 **Nuget-Pakker**
-Microsoft.EntityFrameworkCore.InMemory - Version 6.0.8
-Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore - Version 6.0.8
-Swashbuckle.AspNetCore - Version 6.2.3
+-- Microsoft.EntityFrameworkCore.InMemory - Version 6.0.8
+-- Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore - Version 6.0.8
+-- Swashbuckle.AspNetCore - Version 6.2.3
 
 
 **Testing**
