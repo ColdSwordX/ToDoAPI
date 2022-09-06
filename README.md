@@ -13,11 +13,13 @@
 
 
 **Ressourceses**
-https://www.postman.com/
-https://www.tablesgenerator.com/
+
+* https://www.postman.com/
+* https://www.tablesgenerator.com/
+* https://learning.postman.com/docs/writing-scripts/test-scripts/
 
 Used as a guide to make the API
-https://docs.microsoft.com/en-us/aspnet/core/tutorials/min-web-api?view=aspnetcore-6.0&tabs=visual-studio
+* https://docs.microsoft.com/en-us/aspnet/core/tutorials/min-web-api?view=aspnetcore-6.0&tabs=visual-studio
 
 
 **Nuget-Pakker**
