@@ -30,6 +30,7 @@ Swashbuckle.AspNetCore - Version 6.2.3
 *PostMan*
 
 GET "/"
+
 	Test
 		pm.test("Status code is 200", () => {
 			pm.expect(pm.response.code).to.eql(200);
@@ -37,21 +38,25 @@ GET "/"
 		pm.response.to.have.body("Hello World!")
 
 GET "/todoitems"  
+
 	Test
 		pm.test("Status code is 200", () => {
 			pm.expect(pm.response.code).to.eql(200);
 		});
 GET "/todoitems/all"
+
 	Test
 		pm.test("Status code is 200", () => {
 			pm.expect(pm.response.code).to.eql(200);
 		});
 GET "todoitems/{id}"
+
 	Test
 		pm.test("Status code is 200", () => {
 			pm.expect(pm.response.code).to.eql(200);
 		});
 POST "todoitems"
+
 	body
 		{
 			"name":"walk dog",
@@ -70,6 +75,7 @@ POST "todoitems"
 			pm.expect(response.name).to.eql("walk dog")
 		})
 PUT "todoitems/{id}
+
 	body
 		{
 			"name":"walk dog",
@@ -83,6 +89,7 @@ PUT "todoitems/{id}
 		});
 
 DELETE "/todoitems/{id}"
+s
 	Test
 		pm.test("Status code is 200", () => {
 			pm.expect(pm.response.code).to.eql(200);
