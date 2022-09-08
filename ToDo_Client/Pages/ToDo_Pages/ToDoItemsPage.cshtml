@@ -1,0 +1,54 @@
+﻿@page
+
+@model ToDo_Client.Pages.ToDo_Pages.ToDoItemsPageModel
+@{
+}
+<div>
+
+
+    <button type="button" data-bs-toggle="modal" data-bs-target="#CreateItemModal">Create new ToDo Item</button>
+
+    <div id="CreateItemModal" class="modal"data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Create new Item</h2>
+                </div>
+                <div class="modal-body">
+                    <label>Task name</label>
+                    <input type="text" asp-for="@Model.TodoItem.Name" />
+                    <label>Priority</label>
+                    <select asp-for="@Model.TodoItem.Priority">
+                        @foreach (string item in Enum.GetNames(typeof(Priority)))
+                        {
+                            <option value="@item">@item</option>
+                        }
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" onclick="CreateNewTast_Clicked">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <table style="width:100%">
+        <tr>
+            <th>Completed</th>
+            <th>Task</th>
+            <th>Priority</th>
+            <th>Created Time</th>
+            <th>Id</th>
+        </tr>
+        @foreach (Todo item in Model.ListOfToDoItems)
+        {
+            <tr>
+                <td><input type="checkbox" id="@item.Id" name="@item.Id"></td>
+                <td><a href="">@item.Name</a></td>
+                <td>@item.Priority</td>
+                <td>@item.CreatedTimeStamp</td>
+                <td>@item.Id</td>
+            </tr>
+        }
+    </table>
+</div>
